@@ -172,7 +172,7 @@ p {
 .homepage {
   justify-content: space-between;
   padding-top: 100px;
-  background-image: url("../../image/banner.png");
+  background-image: url("../image/banner.png");
   background-repeat: no-repeat;
 }
 .homepage img {
@@ -269,7 +269,7 @@ p {
   background-size: 90% 63%;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("../../image/feature.png");
+  background-image: url("../image/feature.png");
   min-width: 50%;
   position: relative;
   display: flex;
@@ -321,7 +321,7 @@ p {
   text-align: center;
 }
 .video .player {
-  background: url("../../image/phone-3.png");
+  background: url("../image/phone-3.png");
   background-repeat: no-repeat;
   width: 680px;
   height: 300px;
@@ -472,7 +472,7 @@ footer .container form input {
 }
 
 .carousel {
-  background: url("../../image/testimonial.png");
+  background: url("../image/testimonial.png");
 }
 .carousel h2 {
   margin-top: 0px;
