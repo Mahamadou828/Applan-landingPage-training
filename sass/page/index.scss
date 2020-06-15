@@ -83,7 +83,7 @@
 .homepage {
   justify-content: space-between;
   padding-top: 100px;
-  background-image: url("../../image/banner.png");
+  background-image: url("../image/banner.png");
   background-repeat: no-repeat;
 
   img {
@@ -192,7 +192,7 @@
     background-size: 90% 63%;
     background-repeat: no-repeat;
     background-position: center center;
-    background-image: url("../../image/feature.png");
+    background-image: url("../image/feature.png");
     min-width: 50%;
     position: relative;
     display: flex;
@@ -249,7 +249,7 @@
   text-align: center;
 
   .player {
-    background: url("../../image/phone-3.png");
+    background: url("../image/phone-3.png");
     background-repeat: no-repeat;
     width: 680px;
     height: 300px;
@@ -413,7 +413,7 @@ footer {
 }
 
 .carousel {
-  background: url("../../image/testimonial.png");
+  background: url("../image/testimonial.png");
   h2 {
     margin-top: 0px;
     color: $white;
