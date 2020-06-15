@@ -80,3 +80,16 @@ p {
 .link {
   color: $white;
 }
+
+.center {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.responsive-container {
+  display: flex;
+  flex-direction: row;
+  @include mobile-only {
+    flex-direction: column;
+  }
+}

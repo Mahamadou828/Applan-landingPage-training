@@ -15,10 +15,37 @@
   }
 
   .menu {
+    position: relative;
+    &-toggle {
+      background-color: $white;
+      border: 1px solid $black;
+      color: $primary-color;
+      margin-right: 50px;
+      font-size: 20px;
+      outline: 0;
+      display: none;
+      @include tablet {
+        display: block;
+      }
+    }
+
     &-item {
       display: flex;
       flex-direction: row;
       padding: 0px;
+
+      @include tablet {
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        padding: 20px;
+        background: $white;
+        box-shadow: $box-shadown;
+        border: 2px solid $black;
+        border-radius: 20px;
+        color: $primary-color;
+      }
 
       &-link {
         list-style: none;
@@ -41,6 +68,11 @@
 .top {
   background: none;
   color: $white;
+
+  .menu-toggle {
+    background-color: $primary-color;
+    color: $white;
+  }
 }
 
 .other {
@@ -49,11 +81,19 @@
 }
 
 .homepage {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
   padding-top: 100px;
   background-image: url("../../image/banner.png");
+  background-repeat: no-repeat;
+
+  img {
+    width: 464px;
+    height: 680px;
+
+    @include mobile-only {
+      margin: 25px auto 0px auto;
+    }
+  }
 
   .container {
     max-width: 480px;
@@ -77,8 +117,6 @@
   text-align: center;
 
   .container {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     padding: 0px 25px;
     line-height: 38px;
@@ -105,8 +143,6 @@
 
 .explain {
   margin-top: 100px;
-  display: flex;
-  flex-direction: row;
   padding: 25px 25px;
   transition: all ease-in-out 0.3s;
   background: $white;
@@ -114,6 +150,12 @@
   &:hover {
     background: $black;
     color: $primary-color !important;
+  }
+
+  img {
+    width: 320px;
+    margin: 0 auto;
+    height: 749px;
   }
 
   .container {
@@ -144,8 +186,6 @@
 
 .features {
   margin-top: 100px;
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
 
   .container {
@@ -155,11 +195,11 @@
     background-image: url("../../image/feature.png");
     min-width: 50%;
     position: relative;
+    display: flex;
+    flex-direction: column;
 
     .row {
-      display: flex;
       justify-content: space-between;
-      flex-direction: row;
       margin: 85px 0px 0px 0px;
     }
 
@@ -188,6 +228,10 @@
       box-shadow: $box-shadown;
       padding: 15px 0px;
       border-radius: 10px;
+
+      @include mobile-only {
+        margin: 0 auto 15px auto;
+      }
 
       h5 {
         color: $primary-color !important;
@@ -239,14 +283,16 @@
   }
 
   .container {
-    display: flex;
-    flex-direction: row;
     margin: 50px auto 0 auto;
     max-width: 927px;
 
     .best {
       height: 550px !important;
       transform: translateY(-30px);
+      @include mobile-only {
+        transform: translateY(0px);
+        margin-top: 15px;
+      }
     }
 
     .order {
@@ -268,6 +314,7 @@
       width: 309px;
       height: 479px;
       text-align: center;
+
       h4 {
         margin: 0px;
         text-align: center;
@@ -298,8 +345,6 @@
   }
 
   .container {
-    display: flex;
-    flex-direction: row;
     margin-bottom: 50px;
 
     article {
@@ -314,6 +359,10 @@
         padding: 0px 25px;
         box-shadow: $box-shadown;
         border-bottom-right-radius: 30px;
+
+        @include mobile-only {
+          max-width: 320px;
+        }
       }
     }
   }
@@ -325,9 +374,6 @@ footer {
   padding-bottom: 25px;
   color: $white;
   .container {
-    display: flex;
-    flex-direction: row;
-
     .button-group {
       display: flex;
       flex-direction: row;
