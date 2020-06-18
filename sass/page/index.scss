@@ -92,6 +92,8 @@
 
     @include mobile-only {
       margin: 25px auto 0px auto;
+      max-width: 310px;
+      max-height: 500px;
     }
   }
 
@@ -147,6 +149,10 @@
   transition: all ease-in-out 0.3s;
   background: $white;
 
+  @include mobile-only {
+    padding: 25px 0px;
+  }
+
   &:hover {
     background: $black;
     color: $primary-color !important;
@@ -156,10 +162,19 @@
     width: 320px;
     margin: 0 auto;
     height: 749px;
+
+    @include mobile-only {
+      max-width: 310px;
+      max-height: 600px;
+    }
   }
 
   .container {
     padding: 0px 50px;
+
+    @include mobile-only {
+      padding: 0px 25px;
+    }
     p {
       font-size: 16px;
     }
@@ -187,6 +202,12 @@
 .features {
   margin-top: 100px;
   justify-content: space-between;
+
+  img {
+    @include mobile-only {
+      max-width: 310px;
+    }
+  }
 
   .container {
     background-size: 90% 63%;
@@ -254,6 +275,12 @@
     width: 680px;
     height: 300px;
     margin: 0 auto;
+
+    @include mobile-only {
+      max-width: 320px;
+      background-position: center;
+      height: auto;
+    }
 
     button {
       margin-top: 150px;
@@ -380,6 +407,10 @@ footer {
       justify-content: space-between;
       max-width: 320px;
       margin: 25px 0px 15px 15px;
+
+      @include mobile-only {
+        margin: 15px 5px 15px 5px;
+      }
     }
 
     form {
@@ -390,8 +421,9 @@ footer {
       text-align: center;
       margin-top: 25px;
       background: #319bfa;
-      max-width: 300px;
+      max-width: 70%;
       border-radius: 10px;
+      padding-bottom: 25px;
 
       p {
         margin: 25px 0px;
@@ -414,6 +446,10 @@ footer {
 
 .carousel {
   background: url("../image/testimonial.png");
+
+  @include mobile-only {
+    display: none;
+  }
   h2 {
     margin-top: 0px;
     color: $white;

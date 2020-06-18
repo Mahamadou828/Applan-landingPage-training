@@ -40,6 +40,11 @@ p {
   border: none;
   font-size: 16px;
 }
+@media screen and (max-width: 750px) {
+  .button {
+    padding: 10px;
+  }
+}
 
 .bg-first {
   background: #0181f5;
@@ -182,6 +187,8 @@ p {
 @media screen and (max-width: 750px) {
   .homepage img {
     margin: 25px auto 0px auto;
+    max-width: 310px;
+    max-height: 500px;
   }
 }
 .homepage .container {
@@ -229,6 +236,11 @@ p {
   transition: all ease-in-out 0.3s;
   background: #fff;
 }
+@media screen and (max-width: 750px) {
+  .explain {
+    padding: 25px 0px;
+  }
+}
 .explain:hover {
   background: #343a40;
   color: #0181f5 !important;
@@ -238,8 +250,19 @@ p {
   margin: 0 auto;
   height: 749px;
 }
+@media screen and (max-width: 750px) {
+  .explain img {
+    max-width: 310px;
+    max-height: 600px;
+  }
+}
 .explain .container {
   padding: 0px 50px;
+}
+@media screen and (max-width: 750px) {
+  .explain .container {
+    padding: 0px 25px;
+  }
 }
 .explain .container p {
   font-size: 16px;
@@ -264,6 +287,11 @@ p {
 .features {
   margin-top: 100px;
   justify-content: space-between;
+}
+@media screen and (max-width: 750px) {
+  .features img {
+    max-width: 310px;
+  }
 }
 .features .container {
   background-size: 90% 63%;
@@ -326,6 +354,13 @@ p {
   width: 680px;
   height: 300px;
   margin: 0 auto;
+}
+@media screen and (max-width: 750px) {
+  .video .player {
+    max-width: 320px;
+    background-position: center;
+    height: auto;
+  }
 }
 .video .player button {
   margin-top: 150px;
@@ -444,6 +479,11 @@ footer .container .button-group {
   max-width: 320px;
   margin: 25px 0px 15px 15px;
 }
+@media screen and (max-width: 750px) {
+  footer .container .button-group {
+    margin: 15px 5px 15px 5px;
+  }
+}
 footer .container form {
   display: flex;
   flex-direction: column;
@@ -452,8 +492,9 @@ footer .container form {
   text-align: center;
   margin-top: 25px;
   background: #319bfa;
-  max-width: 300px;
+  max-width: 70%;
   border-radius: 10px;
+  padding-bottom: 25px;
 }
 footer .container form p {
   margin: 25px 0px;
@@ -473,6 +514,11 @@ footer .container form input {
 
 .carousel {
   background: url("../image/testimonial.png");
+}
+@media screen and (max-width: 750px) {
+  .carousel {
+    display: none;
+  }
 }
 .carousel h2 {
   margin-top: 0px;
